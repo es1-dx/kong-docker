@@ -55,7 +55,7 @@ RUN set -ex; \
 #Python
 RUN sudo apt-get update
 RUN sudo apt-get install -y --no-install-recommends python3 python3-pip python3-dev musl-dev libffi-dev gcc g++ file make
-RUN pip3 install kong-pdk geopy
+RUN pip3 install kong-pdk geopy requests json
     
 WORKDIR /opt/kong-python-pdk
 COPY ./kong-python-pdk .
